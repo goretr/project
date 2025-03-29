@@ -31,4 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.getElementById("logo").addEventListener("click", function() {
+    let gif = document.getElementById("gif");
+    let audio = document.getElementById("scary-audio");
+
+    gif.style.display = "block";
+    audio.play();
+
+    setTimeout(function() {
+        gif.style.display = "none";
+        audio.pause();
+        audio.currentTime = 0;
+    }, 3000);
+});
+
 

@@ -269,3 +269,57 @@ footer {
 .footer-links a:hover {
     text-decoration: underline;
 }
+
+.pok {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.pok-con {
+    width: 400px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    overflow-y: auto;
+}
+
+.pok-con img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.pok-con a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.cl-pok {
+    background-color: #ff4d4d;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.cl-pok:hover {
+    background-color: #cc0000;
+}

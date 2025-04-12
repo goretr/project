@@ -9,10 +9,29 @@
     <title>Store</title>
 </head>
 <body id="main">
+    <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="gradients-container">
+          <div class="g1"></div>
+          <div class="g2"></div>
+          <div class="g3"></div>
+          <div class="g4"></div>
+          <div class="g5"></div>
+          <div class="interactive"></div>
+        </div>
+      </div>
     <header >
         <img src="logo.png" alt="Game Key Store Logo" class="logo" id="logo">
         <div class="nav">
-            <a href="#" class="nav-text">Інформація</a>
+            <a href="#" class="nav-text" id="infoBtn">Інформація</a>
             <a href="#main" class="nav-text" class="nav-home">Home</a>
             <a href="#footer" class="nav-text">Про нас</a>
         </div>
@@ -63,8 +82,16 @@
             </div>
         </div>
         <div id="BF" class="product-page">
-            <p class="img"><img src="https://tech-mate.pl/wp-content/uploads/2024/10/CoD_BlackOps6_otwarcie.jpg"></p>
             <div class="h1"><h1>Call Of Duty Black Ops 6</h1></div>
+            <div class="container">
+                <div class="block">
+                    <div class="inner">
+                        <p class="img"><img src="https://tech-mate.pl/wp-content/uploads/2024/10/CoD_BlackOps6_otwarcie.jpg"></p>
+                    </div>
+                </div>
+                <div class="shadow"></div>
+            </div>        
+
             <div class="p">
                 <p>
                     Жанр: FPS шутер від першої особи
@@ -90,7 +117,15 @@
         </div>    
         <div id="BT" class="product-page">
             <div class="h1"><h1>BattleField 2042</h1></div>
-            <p class="img"><img src="https://imgop.itemku.com/?url=https%3A%2F%2Fd1x91p7vw3vuq8.cloudfront.net%2Fitemku-upload%2F20211113%2Fnmp1qrvxz2xyz7um8glij_thumbnail.jpg&w=1033&q=10"></p>
+            <div class="container">
+                <div class="block">
+                    <div class="inner">
+                        <p class="img"><img src="https://imgop.itemku.com/?url=https%3A%2F%2Fd1x91p7vw3vuq8.cloudfront.net%2Fitemku-upload%2F20211113%2Fnmp1qrvxz2xyz7um8glij_thumbnail.jpg&w=1033&q=10"></p>
+                    </div>
+                </div>
+                <div class="shadow"></div>
+            </div>
+            
             <div class="p">
                 <p>
                     Жанр: шутер від першої особи, Військовий екшн
@@ -116,7 +151,14 @@
         </div>    
         <div id="PD" class="product-page">
             <div class="h1"><h1>PayDay 2</h1></div>
-            <p class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1NV1Ca4ExI2IPAfQt2lDa2xmv6QxavVlWg-qJvW5isTfthuagAVxhV1LYB76dyIzMbwA&usqp=CAU"></p>
+            <div class="container">
+                <div class="block">
+                    <div class="inner">
+                        <p class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1NV1Ca4ExI2IPAfQt2lDa2xmv6QxavVlWg-qJvW5isTfthuagAVxhV1LYB76dyIzMbwA&usqp=CAU"></p>
+                    </div>
+                </div>
+                    <div class="shadow"></div>
+            </div>
             <div class="p">
                 <p>
                     Жанр: Кооперативний шутер від першої особи, Кремінальний екшн
@@ -142,7 +184,14 @@
         </div>    
             <div id="DM" class="product-page">
                 <div class="h1"><h1>DOOM Eternal</h1></div>
-                <p class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuR4GNH-GD5p7Ga2b7KSmUxZaU6_lUtlH1JA&s"></p>
+                <div class="container">
+                    <div class="block">
+                        <div class="inner">
+                            <p class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuR4GNH-GD5p7Ga2b7KSmUxZaU6_lUtlH1JA&s"></p>
+                        </div>
+                    </div>
+                        <div class="shadow"></div>
+                </div>
                 <div class="p">
                     <p>
                         Жанр: Шутер від першої особи
@@ -170,7 +219,14 @@
         <div class="prod5">
             <div id="ST" class="product-page">
                 <<div class="h1"><h1>S.T.A.L.K.E.R.2</h1></div>
-                <p class="img"><img src="https://upload.wikimedia.org/wikipedia/en/8/80/STALKER_2_cover_art.jpg"></p>
+                <div class="container">
+                    <div class="block">
+                        <div class="inner">
+                            <p class="img"><img src="https://upload.wikimedia.org/wikipedia/en/8/80/STALKER_2_cover_art.jpg"></p>
+                        </div>
+                    </div>
+                        <div class="shadow"></div>
+                </div>
                 <div class="p">
                     <p>
                         Жанр: Шутер від першої особи, Виживання, Відкритий світ
@@ -198,7 +254,14 @@
         <div class="prod6">
             <div id="ME" class="product-page">
                 <div class="h1"><h1>Metro 2033</h1></div>
-                <p class="img"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Metro_2033_Game_Cover.jpg/220px-Metro_2033_Game_Cover.jpg"></p>
+                <div class="container">
+                    <div class="block">
+                        <div class="inner">
+                            <p class="img"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Metro_2033_Game_Cover.jpg/220px-Metro_2033_Game_Cover.jpg"></p>
+                        </div>
+                    </div>
+                        <div class="shadow"></div>
+                </div>
                 <div class="p">
                     <p>
                         Жанр: Шутер від першої особи, Виживання, Постапокаліптичний екшн
@@ -235,18 +298,72 @@
                 </div>
                 <button class="cl-pok">Закрити</button>
             </div>
-        </div>                      
+        </div>
+        <div class="show_info" id="show_info">
+            <div class="show_cont">
+                <img src="inf.png" alt="Товар">
+                <div>
+                    <p>Розробники: Вадим і Максим.</p>
+                    <p>Сайт було зроблено за 3 тижні.</p>
+                    <p>Мета сайту: продати 10 ігровий ключів.</p>
+                    <p>Насолоджуйтесь цим сайтом</p>
+                </div>
+                <button class="cl-info" id="closeInfo">Закрити</button>
+            </div>
+        </div>
+
+        <div class="show_info" id="privacy_info">
+            <div class="show_cont">
+                <img src="pol.png" alt="Політика конфіденційності">
+                <div>
+                    <p>Ми поважаємо вашу конфіденційність і не збираємо персональні дані без згоди.</p>
+                    <p>Вся інформація використовується виключно для обробки замовлень.</p>
+                    <p>Ми не передаємо дані третім сторонам.</p>
+                    <p>Ваші ключі безпечні з нами!</p>
+                </div>
+                <button class="cl-info" id="closePrivacy">Закрити</button>
+            </div>
+        </div>
+
+
+        <div class="show_info" id="terms_info">
+            <div class="show_cont">
+                <img src="ym.png" alt="Умови використання">
+                <div>
+                    <p>Сайт призначений для особистого використання.</p>
+                    <p>Копіювання контенту заборонено без дозволу.</p>
+                    <p>Усі ключі є офіційними та активуються через відповідні платформи.</p>
+                    <p>Повернення коштів не передбачено.</p>
+                </div>
+                <button class="cl-info" id="closeTerms">Закрити</button>
+            </div>
+        </div>
+
+        <div class="show_info" id="contacts_info">
+            <div class="show_cont">
+                <img src="kon.png" alt="Контакти">
+                <div>
+                    <p>Email: support@gameshop.com</p>
+                    <p>Телефон: +380 99 123 4567</p>
+                    <p>Instagram: <a href="https://instagram.com/gameshop" target="_blank">@gameshop</a></p>
+                    <p>Пишіть нам у разі будь-яких питань!</p>
+                </div>
+                <button class="cl-info" id="closeContacts">Закрити</button>
+            </div>
+        </div>
+                            
     </main>
     <footer id="footer">
         <div class="footer-content">
             <p>&copy; 2025 Game Key Store. Усі права захищені.</p>
             <ul class="footer-links">
-                <li><a href="#">Політика конфіденційності</a></li>
-                <li><a href="#">Умови використання</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a href="#" id="privacyBtn">Політика конфіденційності</a></li>
+                <li><a href="#" id="termsBtn">Умови використання</a></li>
+                <li><a href="#" id="contactsBtn">Контакти</a></li>
             </ul>
         </div>
     </footer>
+    
     
     <script src="1.js"></script>
 </body>

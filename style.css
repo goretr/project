@@ -358,6 +358,18 @@ button:hover {
     display: none; 
     text-align: center; 
 }
+#SC {
+    display: none;
+    text-align: center;
+}
+#DB {
+    display: none;
+    text-align: center;
+}
+#FS {
+    display: none;
+    text-align: center;
+}
 
 
 img {
@@ -524,6 +536,61 @@ footer {
     background-color: #cc0000;
 }
 
+.pok-con h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-methods label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.submit-order {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.submit-order:hover {
+    background-color: #45a049;
+}
+
 .pok {
     display: none;
     position: fixed;
@@ -578,7 +645,6 @@ footer {
     background-color: #cc0000;
 }
 
-
 .container {
     width: 95vw; height: 100vh;
     display: flex;
@@ -611,4 +677,62 @@ footer {
     height: 40vh;
     aspect-ratio: 3 / 4;
     z-index: -1;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-check {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.form-check input {
+    margin-right: 8px;
+}
+
+.crypto-info {
+    text-align: center;
+}
+
+.crypto-info img {
+    margin: 15px auto;
+    display: block;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.crypto-address {
+    background: #f0f0f0;
+    padding: 8px;
+    border-radius: 4px;
+    word-break: break-all;
+    font-family: monospace;
+}
+
+.loading-content {
+    text-align: center;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

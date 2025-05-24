@@ -736,3 +736,28 @@ footer {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+
+.specs {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.specs h3 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.specs ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.specs li {
+    margin-bottom: 5px;
+    color: black;
+    position: relative;
+    padding-left: 20px;
+}
+

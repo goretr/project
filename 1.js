@@ -122,19 +122,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function processPayment() {
-        cardPayment.style.display = "none";
-        cryptoPayment.style.display = "none";
-
+        document.getElementById("cardPayment").style.display = "none";
+        document.getElementById("cryptoPayment").style.display = "none";
+        
+        const loadingScreen = document.getElementById("loadingScreen");
         loadingScreen.style.display = "flex";
-        pok.style.display = "flex";
-        keyDisplay.style.display = "none";
-
+        
         setTimeout(() => {
             loadingScreen.style.display = "none";
-
+            
             generatedKeyElement.textContent = generateKey();
-            keyDisplay.style.display = "block";
-
+            pok.style.display = "flex";
+            
             document.getElementById("orderData").reset();
             document.getElementById("cardForm").reset();
         }, 3500);
@@ -207,3 +206,4 @@ document.addEventListener("DOMContentLoaded", function () {
         e.target.value = value;
     });
 });
+

@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cardPayment = document.getElementById("cardPayment");
     const cryptoPayment = document.getElementById("cryptoPayment");
 
+    
     const modalWindows = {
         info: {
             open: document.getElementById("infoBtn"),

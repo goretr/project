@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const buyButtons = document.querySelectorAll(".prod_buy1, .prod_buy2, .prod_buy3, .prod_buy4, .prod_buy5, .prod_buy6, .prod_buy7, .prod_buy8, .prod_buy9");
+    const buyButtons = document.querySelectorAll(".prod_buy1, .prod_buy2, .prod_buy3, .prod_buy4, .prod_buy5, .prod_buy6, .prod_buy7, .prod_buy8, .prod_buy9, .prod_buy10, .prod_buy11, .prod_buy12");
     const productsContainer = document.querySelector(".products");
     const pok = document.getElementById("buyPok");
     const orderForm = document.getElementById("orderForm");
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     buyButtons.forEach((button, index) => {
         button.addEventListener("click", function () {
-            const sectionId = ["BF", "BT", "PD", "DM", "ST", "ME", "SC", "DB", "FS"][index];
+            const sectionId = ["BF", "BT", "PD", "DM", "ST", "ME", "SC", "DB", "FS", "FH", "NFS", "F1"][index];
             const section = document.getElementById(sectionId);
 
             if (section) {

@@ -1,22 +1,13 @@
-html {
-  scroll-behavior: smooth;
-}
-
-
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #222;
-    color: white;
     padding-top: 90px;
     gap: 100px;
 }
-
 html, body {
     font-family: 'Dongle', sans-serif;
     margin: 0;
-
+    scroll-behavior: smooth;
     overflow-x: hidden;
   }
   
@@ -86,8 +77,6 @@ html, body {
       transform: translateX(-50%) translateY(-10%);
     }
   }
-  
-  
   .gradient-bg {
     position: fixed;
     top: 0;
@@ -107,8 +96,6 @@ html, body {
       width: 0;
       height: 0;
     }
-  
-  
     .gradients-container {
       filter: url(#goo) blur(40px) ;
       width: 100%;
@@ -162,7 +149,6 @@ html, body {
   
       opacity: 1;
     }
-  
     .g4 {
       position: absolute;
       background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
@@ -178,7 +164,6 @@ html, body {
   
       opacity: 0.7;
     }
-  
     .g5 {
       position: absolute;
       background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
@@ -208,7 +193,6 @@ html, body {
       opacity: 0.7;
     }
   }
-
 header {
     display: flex;
     justify-content: space-between;
@@ -222,7 +206,6 @@ header {
     z-index: 10;
     margin-bottom: 20px;
 }
-
 .logo {
     width: 50px;
     height: 50px;
@@ -238,8 +221,6 @@ header {
     z-index: 1000; 
     background-color: black;
 }
-
-
 .nav {
     display: flex;
     gap: 15px;
@@ -248,7 +229,6 @@ header {
     width: 100%;
     
 }
-
 a {
     text-decoration: none;
     color: white;
@@ -258,14 +238,12 @@ a:hover {
     text-decoration: none;
     transform: scale(1.2);
 }
-
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
 }
-
 .product-container {
     background-color: rgba(51, 51, 51, 0.7);
     color: white;
@@ -273,7 +251,6 @@ a:hover {
     border-radius: 8px;
     text-align: center;
 }
-
 .product-page{
     gap: 100px;
     padding: 25px;
@@ -281,7 +258,6 @@ a:hover {
     flex-direction: column;
     align-items: center;
 }
-
 .product-image {
     width: 100%;
     height: 500px;
@@ -289,24 +265,20 @@ a:hover {
     object-fit: cover; 
     border-radius: 5px;
 }
-
 .prod_name {
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
 }
-
 .prod_description {
     font-size: 14px;
     margin-top: 5px;
     color: #aaa;
 }
-
 .prod_info {
     margin-top: 10px;
     font-size: 14px;
 }
-
 .prod_price {
     font-size: 18px;
     margin-top: 5px;
@@ -315,7 +287,6 @@ a:hover {
     border-radius: 5px;
     display: inline-block;
 }
-
 button {
     background-color: #007BFF;
     color: white;
@@ -327,7 +298,6 @@ button {
     transition: transform 0.2s ease-in-out;
 
 }
-
 button:hover {
     background-color: #0056b3;
     transform: scale(1.08);
@@ -372,8 +342,18 @@ button:hover {
     display: none;
     text-align: center;
 }
-
-
+#FH {
+    display: none;
+    text-align: center;
+}
+#NFS {
+    display: none;
+    text-align: center;
+}
+#F1 {
+    display: none;
+    text-align: center;
+}
 img {
     width: 400px;
     height:650px;
@@ -381,7 +361,6 @@ img {
     border-radius: 8px;
     
 }
-
 .img {
     text-align: left;
     margin-left: 40px;
@@ -389,7 +368,6 @@ img {
     margin-right: 20px;
 
 }
-
 .p {
     text-align: center;
     color: black;
@@ -399,7 +377,6 @@ img {
     overflow: auto;
     margin-bottom: 70px;
 }
-
 .h1 {
     text-align: center;
     color: black;
@@ -410,8 +387,6 @@ img {
     margin-bottom: 10px;
 
 }
-
-
 .buy-button{
     background-color: rgb(4, 166, 4);
     width: 100px !important;
@@ -423,18 +398,15 @@ img {
     font-size: 20px;
     font-weight: bolt;
 }
-
 .div-button {
     text-align: right;
     margin-right: 75px;
 }
-
 .buttons-container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
-
 .back-button {
     background-color: #ff4d4d;
     color: white;
@@ -446,12 +418,10 @@ img {
     cursor: pointer;
     transition: transform 0.2s ease-in-out, background-color 0.3s;
 }
-
 .back-button:hover {
     background-color: #cc0000;
     transform: scale(1.1);
 }
-
 
 footer {
     background-color: rgba(51, 51, 51, 0.7);
@@ -459,31 +429,25 @@ footer {
     padding: 20px 0; 
     text-align: center;
 }
-
 .footer-content {
     max-width: 1200px; 
     margin: 0 auto;
 }
-
 .footer-links {
     list-style: none; 
     padding: 0; 
 }
-
 .footer-links li {
     display: inline; 
     margin: 0 15px; 
 }
-
 .footer-links a {
     color: white; 
     text-decoration: none; 
 }
-
 .footer-links a:hover {
     text-decoration: underline;
 }
-
 .show_info {
     display: none;
     position: fixed;
@@ -496,7 +460,6 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
 .show_cont {
     width: 500px;
     background: white;
@@ -510,7 +473,6 @@ footer {
     height: auto;
     overflow-y: auto;
 }
-
 .show_cont img {
     width: 100%;
     height: auto;
@@ -518,12 +480,10 @@ footer {
     border-radius: 8px;
     margin-bottom: 15px;
 }
-
 .show_cont a {
     color: #007BFF;
     text-decoration: none;
 }
-
 .cl-info {
     background-color: #ff4d4d;
     border: none;
@@ -533,28 +493,23 @@ footer {
     cursor: pointer;
     margin-top: 15px;
 }
-
 .cl-info:hover {
     background-color: #cc0000;
 }
-
 .pok-con h2 {
     color: #333;
     margin-bottom: 20px;
     text-align: center;
 }
-
 .form-group {
     margin-bottom: 15px;
 }
-
 .form-group label {
     display: block;
     margin-bottom: 5px;
     color: #333;
     font-weight: bold;
 }
-
 .form-group input[type="text"],
 .form-group input[type="email"] {
     width: 100%;
@@ -563,20 +518,17 @@ footer {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 .payment-methods {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 .payment-methods label {
     display: flex;
     align-items: center;
     gap: 8px;
     cursor: pointer;
 }
-
 .submit-order {
     background-color: #4CAF50;
     color: white;
@@ -588,11 +540,9 @@ footer {
     font-size: 16px;
     margin-top: 15px;
 }
-
 .submit-order:hover {
     background-color: #45a049;
 }
-
 .pok {
     display: none;
     position: fixed;
@@ -605,7 +555,6 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
 .pok-con {
     width: 400px;
     background: white;
@@ -619,7 +568,6 @@ footer {
     height: auto;
     overflow-y: auto;
 }
-
 .pok-con img {
     width: 100%;
     height: auto;
@@ -627,12 +575,10 @@ footer {
     border-radius: 8px;
     margin-bottom: 15px;
 }
-
 .pok-con a {
     color: #007BFF;
     text-decoration: none;
 }
-
 .cl-pok {
     background-color: #ff4d4d;
     border: none;
@@ -642,18 +588,15 @@ footer {
     cursor: pointer;
     margin-top: 15px;
 }
-
 .cl-pok:hover {
     background-color: #cc0000;
 }
-
 .container {
     width: 95vw; height: 100vh;
     display: flex;
     justify-content: center;
     perspective: 400px;
 }
-
 .block {
     height: 70vh;
     aspect-ratio: 6 / 4;
@@ -661,8 +604,6 @@ footer {
     margin: 3em;
     box-sizing: border-box;
 }
-
-
 .inner {
     backdrop-filter: blur(1px);
     border-radius: 10px;
@@ -673,37 +614,30 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 .shadow {
     position: absolute;
     height: 40vh;
     aspect-ratio: 3 / 4;
     z-index: -1;
 }
-
 .form-row {
     display: flex;
     gap: 15px;
 }
-
 .form-row .form-group {
     flex: 1;
 }
-
 .form-check {
     margin: 15px 0;
     display: flex;
     align-items: center;
 }
-
 .form-check input {
     margin-right: 8px;
 }
-
 .crypto-info {
     text-align: center;
 }
-
 .crypto-info img {
     margin: 15px auto;
     display: block;
@@ -711,7 +645,6 @@ footer {
     padding: 10px;
     border-radius: 5px;
 }
-
 .crypto-address {
     background: #f0f0f0;
     padding: 8px;
@@ -719,11 +652,9 @@ footer {
     word-break: break-all;
     font-family: monospace;
 }
-
 .loading-content {
     text-align: center;
 }
-
 .loader {
     border: 5px solid #f3f3f3;
     border-top: 5px solid #3498db;
@@ -733,19 +664,15 @@ footer {
     animation: spin 1s linear infinite;
     margin: 0 auto 15px;
 }
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
-
 .specs {
     margin: 20px 0;
     padding: 15px;
     border-radius: 8px;
 }
-
 .specs h3 {
     margin-bottom: 10px;
     color: black;
@@ -762,4 +689,3 @@ footer {
     position: relative;
     padding-left: 20px;
 }
-
